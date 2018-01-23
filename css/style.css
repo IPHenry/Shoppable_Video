@@ -66,6 +66,9 @@
 		font-size: 24px;
 		margin-top: -7px;
 	}
+	.video-js .product-sheet *{
+		box-sizing: content-box;
+	}
 	.video-js .product-sheet {
 		display: none;
 		position: absolute;
@@ -113,6 +116,7 @@
 	@media (max-width:991px) {
 		.video-js .product-thumbs {
 			/*height: 331px;*/
+			-webkit-box-sizing: content-box;
 		}
 		.video-js .now-playing {
 			width: 40%;
