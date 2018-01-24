@@ -244,10 +244,12 @@ videojs.plugin('shoppable',function(){
 	}
 
 	var autoplay_shutdown = function() {
+		console.log('in_autoplay_shutdown');
 		autoplay_replay()
 		timer = setTimeout("arrow_active = 0", 5000);
 	}
 	var autoplay_replay = function() {
+		console.log('in_autoplay_replay');
 		clearTimeout(timer);
 	}
 	// we call this "one" time because sometimes different player tech fires the same event; this is the earliest point at which we have the metadata from videocloud in _player.mediainfo
